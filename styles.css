@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root{
+    --very-dark-red: #660000;
+    --white: #ffffff;
+    --dark-magenta: #990099;
+    --pure-violet: #9900ff;
+}
+body{
+    background-color: var(--very-dark-red);
+    text-align: center;
+    color: var(--white);
+}
+h1{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    /* Short hand for this is Margin: 20px 0 25px. I am not used to that yet?*/
+}
+.btn{
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--very-dark-red);
+    background-color: var(--dark-magenta);
+    background-image: linear-gradient(#990099,#9900ff);
+    border-color: var(--dark-magenta);
+    border-width: 4px;
+}
+.btn:hover{
+    background-image: linear-gradient(#990088,#8a00e6)
+}
+.rules-container{
+    border: 5px solid var(--dark-magenta);
+    padding: 12px 0px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--white);
+    color: var(--very-dark-red);
+   
+   
+}
+.rules-container ul{
+    list-style-type: none;
+}
+.rules-container p{
+    margin: 10px 0;
+}
+@media (min-width: 760px){
+    .rules-container{
+        width: 60%;
+    }
+}
+.score-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+.score{
+    font-weight: 500;
+}
+.results-container{
+    margin: 15px 0;
+    font-size: 1.3rem;
+
+}
+#winner-msg{
+    margin-top: 25px;
+}
+#reset-game-btn{
+    display: none;
+    margin: 20px auto;
+}
